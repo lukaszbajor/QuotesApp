@@ -1,0 +1,47 @@
+body {
+  background-color: rgb(22, 18, 56);
+  font-family: monospace;
+  color: white;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.boxall {
+  width: 600px;
+}
+.box {
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background: #ddd;
+  border-radius: 8px;
+  color: rgb(22, 18, 56);
+}
+button {
+  margin: 5px;
+  padding: 8px;
+  align-self: center;
+  background: none;
+  background-color: #ddd;
+  border: 1px solid rgb(22, 18, 56);
+  border-radius: 4px;
+  font-family: monospace;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button:hover {
+  background-color: rgb(22, 18, 56);
+  color: #ddd;
+}
+.author {
+  align-self: flex-end;
+}
+.btns {
+  display: flex;
+  align-self: center;
+}
