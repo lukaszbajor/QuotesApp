@@ -36,7 +36,7 @@ function App() {
   return (
     <div className="App">
       <h1 className="header">QuotesApp</h1>
-      <h3 className="info">Draw quote for you!</h3>
+      <h3 className="info">Wylosuj cytat dla siebie!</h3>
       <div className="boxall">
         {quote ? (
           <div className="box">
@@ -44,8 +44,12 @@ function App() {
             <p className="author">{quote.author}</p>
 
             <div className="btns">
-              <button onClick={handleRandom}>Draw</button>
-              {prevQuote ? <button onClick={displayPrev}>Previous</button> : ""}
+              <button onClick={handleRandom}>Losuj</button>
+              {prevQuote ? (
+                <button onClick={displayPrev}>Poprzedni</button>
+              ) : (
+                ""
+              )}
             </div>
           </div>
         ) : (
